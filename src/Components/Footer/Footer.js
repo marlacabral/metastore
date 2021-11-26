@@ -2,7 +2,6 @@ import './Footer.css';
 import { FiFacebook, FiLinkedin, FiTwitter, FiYoutube } from 'react-icons/fi';
 import { FaInstagram } from 'react-icons/fa';
 
-
 export default function Footer(){
 
     return(
