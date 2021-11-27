@@ -28,7 +28,7 @@ export default function Register() {
   return(
     <div className='register'>
       <div className='register-container'>
-        <h2>Criar uma conta Nintendo</h2>
+        <h2>Criar uma conta na Metastore</h2>
 
         <form className='register-form' onSubmit={handleSubmit}>
           <label>Nome</label>

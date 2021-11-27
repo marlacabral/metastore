@@ -27,13 +27,15 @@ export default function Home(){
 
 
     return(
-        <div>
-            {/* <Slider 
-            id="req_ea6e8f97ea2c41cab3fcc5f4b8b38d61"
-            alt='Metaverso'
-            /> */}
-            <Search />
-            <Container title='Mais vendidos'>
+        <div classname='home'>
+            <div className='search-slider'>
+                <Search />
+                <Slider 
+                id="b1ef3772-5067-48d0-a6ff-5b44c27c2c7b"
+                alt='Metaverso'
+                />
+            </div>
+            <Container title='Mais relevantes para você'>
             {
             games.map(game => (
             <Card 

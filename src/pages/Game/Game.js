@@ -1,5 +1,6 @@
 import './Game.css';
-import { FaRegHeart } from 'react-icons/fa';
+import { IoLogoBitcoin } from 'react-icons/io';
+import { BiHappyHeartEyes } from 'react-icons/bi';
 import { useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
@@ -35,14 +36,17 @@ export default function Game() {
 
       <div className='game-wish'>
         <h2>{game.name}</h2>
-        <div className='game-like'>
-          <span>R$ {game.price}</span>
+        <span><IoLogoBitcoin />{game.price}</span>
           <a href='!#'>
-            <FaRegHeart />
+            <BiHappyHeartEyes />
           </a>
-        </div>
+
       </div>
-      <h3>{game.year}</h3>
+      <div className='game-like'>
+          <h3>{game.year}</h3>
+
+          
+        </div>
       <p>{game.storyline}</p>
     </div>
   )

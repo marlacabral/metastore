@@ -1,27 +1,43 @@
+.game{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
 .game-header img {
-  width: 100vw;
-  height: 50rem;
+  width: 80vw;
+  height: 30rem;
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.472);
+  border-radius: .3rem;
 }
 
 .game-wish {
+  width: 90%;
   padding: 2rem 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.game-like {
-  font-size: 1.5em;
-  text-decoration: none;
-  color: #e60012;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.game-wish span{
+  font-size: 1.5rem;
+  text-align: center;
 }
 
-.game-wish a {
-  font-size: 1.5em;
+
+.game-like {
+  font-size: 1.3em;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+
+.game a {
+  font-size: 2em;
   color: #e60012;
   padding: 0 0 0 1rem;
 }
@@ -32,9 +48,9 @@
   font-size: 1.2em;
 }
 
-.game h3 {
+.game-like h3 {
   padding: 0 6rem;
   text-align: justify;
-  font-size: 1.2em;
-  color: #e60012;
+  font-size: 1.5em;
+  color: rgba(143, 2, 112, 0.87);
 }

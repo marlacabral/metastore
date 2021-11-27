@@ -23,18 +23,16 @@ export default function Slider(props){
 
 
     return(
-        <div>
-            <div className='slider'>
+        <div className='slider'>
             
-                <span className='slider-text'>Jogos em Destaque</span>
-
-                <img className='image' src={game.image} alt={game.name} />
-
-                <button className='btn-descubra'>
-                    <a href={props.cardLink}>Descubra Mais</a>
+                <button className='btn-descubra'><a href={props.cardLink}><h3>Lançamentos</h3></a>
                 </button>
-            </div>
+       
 
+            <div className='slider-image'>
+                <img src='https://assets.nintendo.com/image/upload/c_pad,f_auto,h_613,q_auto,w_1089/ncom/en_CA/games/switch/g/grand-theft-auto-the-trilogy-the-definitive-edition-switch/hero?v=2021111508' alt={game.name} />
+            </div>
         </div>
+
     )
 }

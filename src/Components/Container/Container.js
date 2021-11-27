@@ -3,7 +3,7 @@ import './Container.css';
 export default function Container(props) {
   return (
     <div className='container-div'>
-      <h2 className='container-title'>{props.title}</h2>
+      <h3 className='container-title'>{props.title}</h3>
       <div className='container-cards'>
         {props.children}
       </div>

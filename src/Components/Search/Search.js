@@ -4,13 +4,11 @@ import { FaSearch } from 'react-icons/fa';
 export default function Search(){
 
     return(
-
-        <div>
-            <span>Buscar: </span>
+        <div className='search'>
             <form className='search-input'>
-                <input type='text' className='buscar' placeholder='Digite o nome do jogo'></input>
+                <input type='text' className='search-text' placeholder='Digite o nome de um jogo'></input>
                 
-                <button><FaSearch/></button>         
+                <button className='btn-search'><FaSearch/></button>         
                 
             </form>
         </div>

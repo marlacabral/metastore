@@ -28,18 +28,20 @@ export default function Wishlist() {
     }, [mounted])
 
     return(
-        <Container title='Lista de Desejos'>
-        {
-            wishList.map(game => (
-            <Card 
-                id={game.id}
-                image={game.image}
-                title={game.name}
-                preco={game.price}
-                key={game.id}
-            />
-            ))
-        }
-        </Container>
+        <div className='wishlist-title'>
+            <Container title='Lista de Desejos'>
+            {
+                wishList.map(game => (
+                <Card 
+                    id={game.id}
+                    image={game.image}
+                    title={game.name}
+                    preco={game.price}
+                    key={game.id}
+                />
+                ))
+            }
+            </Container>
+        </div>
     )
 }

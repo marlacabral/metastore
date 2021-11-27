@@ -24,7 +24,7 @@ export default function Login() {
 
   return (
     <div className='login'>
-      <h2 className='login-title'>Conta Nintendo</h2>
+      <h2 className='login-title'>Conta Metastore</h2>
       <div className='login-container'>
         
         <form className='login-form' onSubmit={handleSubmit}>
@@ -46,7 +46,7 @@ export default function Login() {
         </form>
         <div className='login-create'>
           <span>Ainda não possui uma conta?</span>
-          <a className='btn-create' href='/register'>Criar uma conta Nintendo</a>
+          <a className='btn-create' href='/register'>Criar conta na Metastore</a>
         </div>
       </div>
     </div>

@@ -34,12 +34,13 @@ export default function Card(props){
 
                 <h2 className='card-title'>{props.title}</h2>
 
-                <span className='card-preco'>{'R$ ' + props.preco}</span>
             </div>
-        
-            <button className='wishlist' onClick={wishGame}>
-            <BiHappyHeartEyes />
-            </button>
+            
+            <div className='card-preco'>
+                <span><IoLogoBitcoin /> {props.preco}</span>
+                <button className='wishlist' onClick={wishGame}><BiHappyHeartEyes /></button>
+            </div>
+            
         </div>
             
     )
